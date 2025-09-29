@@ -1,0 +1,25 @@
+h2 {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: large;
+    font-weight: 500;
+}
+
+.descriptions {
+    font-weight: 400;
+}
+
+#Projects {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background: #f0f0f0;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: bolder;
+}
