@@ -8,10 +8,9 @@ import { useEffect, useState } from "react";
 
 // import { collection, getDocs } from "firebase/firestore"; 
 function Cart(details:project){
-    console.log(details.crew)
     return (
          <div id="project-card" className="group overflow-clip relative grid h-100 border">
-                    <div id="project-image" className={`h-55 bg-[url("public/images/codeicon.jpg")] bg-cover bg-center`}>
+                    <div id="project-image" className={`h-55 bg-[url("/images/codeicon.jpg")] bg-cover bg-center`}>
                     </div>
                     <div className="description flex flex-col items-center text-center">
                         <h3>{details?.title}</h3>

@@ -24,8 +24,8 @@ function Header(){
                     </ul>
                 </div>
 
-            <div className="flex w-9" onClick={()=>dispatch(swapTheme())}>
-                <img src={`${theme.Light ? "public/images/darktheme.svg" : "public/images/lightheme.svg"}`} alt="" />
+            <div className="flex w-9 shadow-[0_0_20px_rgba(0,255,255,0.7)]" onClick={()=>dispatch(swapTheme())}>
+                <img src={`${theme.Light ? "/images/darktheme.svg" : "/images/lightheme.svg"} `} alt="" />
             </div>
         </header>
     )
