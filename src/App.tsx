@@ -7,6 +7,7 @@ import Contact from './Pages/ContacrPage/contact'
 import { Route, Routes } from 'react-router-dom'
 import type { RootState } from './State/store'
 import { useSelector } from 'react-redux'
+import Admin from './Pages/admin/admin'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element = {<Home/>} />
         <Route path='/projects' element = {<Projects />} />
         <Route path='/contact' element = {<Contact />} />
+        <Route path='/admin' element = {<Admin />} />
       </Routes>
       <Footer />
     </section>

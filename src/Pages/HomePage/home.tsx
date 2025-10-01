@@ -8,15 +8,16 @@ import { Link } from "react-router-dom"
 function Hero (){
     return (
         <section className="p-5 border-1 h-auto gap-5 mx-10 sm:mx-30 md:mx-45 
-        lg:mx-70 mt-10 flex flex-col justify-center items-center">
+        lg:mx-70 font-bold text-black mt-10 bg-gradient-to-r from-red-200 to-pink-200 via-green-200 flex flex-col justify-center items-center">
             <h1 className="text-4xl text-center">Hi, I`m Banboye christian</h1>
 
             <p className="text-center text-2xl">A junior software developer devoted to designing scalable,
                  user-centric web applications blending engineering precision with creative flair
                   to build impactful digital experiences.
             </p>
-
-            <button className="bg-blue-300 text-black text-2xl p-2 w-40 ">View Projects</button>
+            <Link to={"/projects"}>
+                <button className="bg-blue-300 text-black text-2xl p-2 w-40 ">View Projects</button>
+            </Link>
         </section>
     )
 }
@@ -97,7 +98,7 @@ function Home(){
         <Hero />
         <AboutMe />
         <div className="actions flex gap-4 text-black text-xl justify-center">
-            <Link to={"/projects"}> <button className="bg-blue-300 p-2"> Contact me</button></Link>
+            <Link to={"/contact"}> <button className="bg-blue-300 p-2"> Contact me</button></Link>
             <Link to={"/projects"}> <button className="bg-blue-300 p-2"> view Projects</button></Link>
         </div>
     </section>

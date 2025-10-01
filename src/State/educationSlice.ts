@@ -9,13 +9,6 @@ const initialState:achievments = {
             start: "October 2022",
             stop: "Ongoing"
         },
-        {
-            title: "Bachelo of Computer Eng",
-            organisation: "The University of Bamenda",
-            description:"",
-            start: "October 2022",
-            stop: "Ongoing"
-        },
     ]
 }
 

@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 
 export interface project{
     image:string,
@@ -7,40 +7,16 @@ export interface project{
     id?:string
     crew: boolean
     links?: {
-        gitHub: URL,
-        deployed: URL,
+        gitHub: string,
+        deployed: string,
     }
 }
 
-interface projects{
+export interface projects{
     projects:project[]
 }
 const initialState:projects = {
     projects: [
-        {
-            image:'/public/images/peace.jpg',
-            title: "portfolio",
-            description: "A portfolio website showcasing my work, skills, and experience with interactive elements.",
-            crew: false,
-        },
-        {
-            image:'/public/images/peace.jpg',
-            title: "portfolio",
-            description: "A portfolio website showcasing my work, skills, and experience with interactive elements.",
-            crew: false,
-        },
-        {
-            image:'/public/images/peace.jpg',
-            title: "portfolio",
-            description: "A portfolio website showcasing my work, skills, and experience with interactive elements.",
-            crew: false,
-        },
-        {
-            image:'/public/images/peace.jpg',
-            title: "portfolio",
-            description: "A portfolio website showcasing my work, skills, and experience with interactive elements.",
-            crew: false,
-        },
         {
             image:'/public/images/peace.jpg',
             title: "portfolio",
@@ -54,7 +30,9 @@ const projectsSlice = createSlice({
     name:"projects",
     initialState,
     reducers:{
-
+        addProject: (state, payload:PayloadAction<project>)=>{
+            state.projects = [...state.projects, payload.payload]
+        }
     }
 })
 

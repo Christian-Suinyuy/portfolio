@@ -10,17 +10,17 @@ function Contact(){
             <form action="#" className="w-3/4 sm:w-100 flex flex-col gap-3 ">
                 <label htmlFor="name">
                     <p className="font-semibold">Your name</p>
-                    <input type="text" placeholder="Enter your name" className="p-1 placeholder:to-white border border-gray-400 w-full" />
+                    <input type="text" placeholder="Enter your name" className="p-1 focus:outline-blue-300 placeholder:to-white border border-gray-400 w-full" />
                 </label>
 
                 <label htmlFor="name">
                     <p className="font-semibold">Your Email</p>
-                    <input type="email" placeholder="Enter your email" className="p-1 placeholder:to-white border border-gray-400 w-full" />
+                    <input type="email" placeholder="Enter your email" className="p-1 focus:outline-blue-300 placeholder:to-white border border-gray-400 w-full" />
                 </label>
 
                 <label htmlFor="message">
                     <p className="font-semibold">Your Email</p>
-                    <textarea name="message" id="message" placeholder="Message to send" className="border p-1 placeholder:to-white border-gray-400 w-full min-h-20"></textarea>
+                    <textarea name="message" id="message" placeholder="Message to send" className="border focus:outline-blue-300 p-1 placeholder:to-white border-gray-400 w-full min-h-20"></textarea>
                 </label>
 
                 <button type="submit" className="p-2 rounded bg-blue-600 mx-auto">Send Message</button>
