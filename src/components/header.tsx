@@ -16,7 +16,7 @@ function Header(){
                             <li className=''>Home</li>
                         </Link>
                         <Link to='/projects' className='hover:scale-110 ease-in-out'>
-                            <li className=''>Products</li>
+                            <li className=''>Projects</li>
                         </Link>
                         <Link to='/contact' className='hover:scale-110 ease-in-out'>
                             <li className=''>Contact</li>

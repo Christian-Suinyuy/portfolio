@@ -1,15 +1,13 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 
 export interface project{
-    image:string,
+    image?:string,
     title: string,
     description: string,
-    id?:string
-    crew: boolean
-    links?: {
-        gitHub: string,
-        deployed: string,
-    }
+    id?:string,
+    crew: boolean,
+    github?: string,
+    deployed?: string,
 }
 
 export interface projects{
