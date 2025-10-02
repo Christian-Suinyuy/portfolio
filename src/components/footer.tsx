@@ -14,7 +14,7 @@ function Footer(){
         </div>
 
         <div className="copyright flex">
-            &copy; copyright 2025
+            &copy; 2025 Portfolio. All rights reserved.
         </div>
     </footer>
 }
