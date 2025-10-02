@@ -1,2 +1,2 @@
-this stores all todos in a firebase database
+this loads projects from firebase
 deplyed link: https://bcsportfolio0.netlify.app/
